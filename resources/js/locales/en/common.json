@@ -1,0 +1,15 @@
+{
+  "home": "Home",
+  "new": "New",
+  "edit": "Edit",
+  "delete": "Delete",
+  "confirmDelete": "Yes. Delete",
+  "save": "Save",
+  "update": "Editar",
+  "cancel": "Cancel",
+  "yes": "Yes",
+  "no": "No",
+  "close": "Close",
+  "actions": "Actions",
+  "fieldsValidationError": "Validation error: All form fields must be completed."
+}

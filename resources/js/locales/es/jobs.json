@@ -1,0 +1,34 @@
+{
+  "executeJob": "Ejecutar Trabajo",
+  "searchJob": "Buscar Trabajo...",
+  "name": "Nombre",
+  "batch": "Lote",
+  "job": "Trabajo",
+  "date": "Fecha",
+  "status": "Estado",
+  "total": "Total",
+  "pending": "Pendiente",
+  "failed": "Fallido",
+  "selectProject": "Seleccionar Proyecto",
+  "selectJob": "Seleccionar Trabajo",
+  "jobName": "Nombre o detalles del trabajo (Opcional)",
+  "jobParams": "Parámetros",
+  "statuses": {
+    "pending": "Pendiente",
+    "running": "En progreso",
+    "completed": "Completado",
+    "failed": "Fallido",
+    "cancelled": "Cancelado"
+  },
+  "jobExecutedSuccessfully": "Trabajo ejecutado correctamente",
+  "errorExecutingJob": "Error al ejecutar el trabajo",
+
+  "tableHeaderName": "Nombre del trabajo",
+  "tableHeaderTenant": "Inquilino",
+  "tableHeaderTotal": "Total",
+  "tableHeaderPending": "Pendiente",
+  "tableHeaderFailed": "Fallido",
+  "tableHeaderDate": "Fecha",
+  "tableHeaderResponse": "Respuesta",
+  "tableHeaderStatus": "Estado"
+}

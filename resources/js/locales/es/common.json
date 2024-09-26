@@ -1,0 +1,15 @@
+{
+  "home": "Inicio",
+  "new": "Nuevo",
+  "edit": "Editar",
+  "delete": "Eliminar",
+  "confirmDelete": "Si. Eliminar",
+  "save": "Guardar",
+  "update": "Editar",
+  "cancel": "Cancelar",
+  "yes": "Si",
+  "no": "No",
+  "close": "Cerrar",
+  "actions": "Acciones",
+  "fieldsValidationError": "Error de validación: Todos los campos son obligatorios."
+}

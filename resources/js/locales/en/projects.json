@@ -1,0 +1,33 @@
+{
+  "newProject": "New Project",
+  "editProject": "Edit Project",
+  "project": "Project",
+  "projects": "Projects",
+  "pageTitle": "Projects",
+  "searchProject": "Search Project...",
+  "tableTitle": "Projects",
+  "tableHeaderName": "Name",
+  "tableHeaderEndPoint": "EndPoint",
+
+  "name": "Name",
+  "description": "Description",
+  "logo": "Logo",
+  "dbHost": "Host",
+  "dbPort": "Port",
+  "dbUserName": "User Name",
+  "dbPassword": "Password",
+  "dbDatabaseName": "Database Name",
+  "dbCharset": "Character Set",
+  "dbCollation": "Collation",
+  "dbPrefix": "Prefix",
+  "rawQuery": "Raw Query",
+  "bindings": "Bindings",
+
+  "createdProjectSuccessfully": "Project created successfully",
+  "updatedProjectSuccessfully": "Project updated successfully",
+  "deletedProjectSuccessfully": "Project deleted successfully",
+  "deleteConfirmation": "Are you sure you want to delete this project?",
+  "errorCreatingProject": "Error creating project",
+  "errorUpdatingProject": "Error updating project",
+  "errorDeletingProject": "Error deleting project"
+}

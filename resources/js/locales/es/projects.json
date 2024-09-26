@@ -1,0 +1,33 @@
+{
+  "newProject": "Nuevo Proyecto",
+  "editProject": "Editar Proyecto",
+  "project": "Proyecto",
+  "projects": "Proyectos",
+  "pageTitle": "Proyectos",
+  "searchProject": "Buscar Proyecto...",
+  "tableTitle": "Proyectos",
+  "tableHeaderName": "Nombre del proyecto",
+  "tableHeaderEndPoint": "EndPoint",
+
+  "name": "Nombre",
+  "description": "Descripción",
+  "logo": "Logo",
+  "dbHost": "Host",
+  "dbPort": "Puerto",
+  "dbUserName": "Usuario",
+  "dbPassword": "Contraseña",
+  "dbDatabaseName": "Base de datos",
+  "dbCharset": "Caracteres",
+  "dbCollation": "Colación",
+  "dbPrefix": "Prefijo",
+  "rawQuery": "Query",
+  "bindings": "Bindings",
+
+  "createdProjectSuccessfully": "Proyecto creado correctamente",
+  "updatedProjectSuccessfully": "Proyecto actualizado correctamente",
+  "deletedProjectSuccessfully": "Proyecto eliminado correctamente",
+  "deleteConfirmation": "¿Seguro que quieres borrar este proyecto?",
+  "errorCreatingProject": "Error al crear el proyecto",
+  "errorUpdatingProject": "Error al actualizar el proyecto",
+  "errorDeletingProject": "Error al eliminar el proyecto"
+}

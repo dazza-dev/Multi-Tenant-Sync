@@ -1,0 +1,162 @@
+{
+  "_UiParentCard.vue_vue_type_script_setup_true_lang-BfSscY-T.js": {
+    "file": "assets/UiParentCard.vue_vue_type_script_setup_true_lang-BfSscY-T.js",
+    "name": "UiParentCard.vue_vue_type_script_setup_true_lang",
+    "imports": [
+      "resources/js/app.ts"
+    ]
+  },
+  "_i18nUtils-VWib1heL.js": {
+    "file": "assets/i18nUtils-VWib1heL.js",
+    "name": "i18nUtils",
+    "imports": [
+      "resources/js/app.ts"
+    ]
+  },
+  "_index-BCwlJIxQ.js": {
+    "file": "assets/index-BCwlJIxQ.js",
+    "name": "index",
+    "imports": [
+      "resources/js/app.ts"
+    ]
+  },
+  "_jobExecution-Dcnq31yo.js": {
+    "file": "assets/jobExecution-Dcnq31yo.js",
+    "name": "jobExecution",
+    "imports": [
+      "resources/js/app.ts",
+      "_UiParentCard.vue_vue_type_script_setup_true_lang-BfSscY-T.js"
+    ]
+  },
+  "_project-DiB0_pof.js": {
+    "file": "assets/project-DiB0_pof.js",
+    "name": "project",
+    "imports": [
+      "resources/js/app.ts",
+      "_UiParentCard.vue_vue_type_script_setup_true_lang-BfSscY-T.js"
+    ]
+  },
+  "node_modules/@mdi/font/fonts/materialdesignicons-webfont.eot": {
+    "file": "assets/materialdesignicons-webfont-CSr8KVlo.eot",
+    "src": "node_modules/@mdi/font/fonts/materialdesignicons-webfont.eot"
+  },
+  "node_modules/@mdi/font/fonts/materialdesignicons-webfont.ttf": {
+    "file": "assets/materialdesignicons-webfont-B7mPwVP_.ttf",
+    "src": "node_modules/@mdi/font/fonts/materialdesignicons-webfont.ttf"
+  },
+  "node_modules/@mdi/font/fonts/materialdesignicons-webfont.woff": {
+    "file": "assets/materialdesignicons-webfont-PXm3-2wK.woff",
+    "src": "node_modules/@mdi/font/fonts/materialdesignicons-webfont.woff"
+  },
+  "node_modules/@mdi/font/fonts/materialdesignicons-webfont.woff2": {
+    "file": "assets/materialdesignicons-webfont-Dp5v-WZN.woff2",
+    "src": "node_modules/@mdi/font/fonts/materialdesignicons-webfont.woff2"
+  },
+  "resources/js/app.ts": {
+    "file": "assets/app-DlGd_NOW.js",
+    "name": "app",
+    "src": "resources/js/app.ts",
+    "isEntry": true,
+    "dynamicImports": [
+      "resources/js/layouts/full/FullLayout.vue",
+      "resources/js/views/projects/Index.vue",
+      "resources/js/views/projects/Show.vue",
+      "resources/js/views/jobs/Details.vue",
+      "resources/js/views/jobs/Execute.vue"
+    ],
+    "css": [
+      "assets/app-Vd6wuNSJ.css"
+    ],
+    "assets": [
+      "assets/materialdesignicons-webfont-CSr8KVlo.eot",
+      "assets/materialdesignicons-webfont-Dp5v-WZN.woff2",
+      "assets/materialdesignicons-webfont-PXm3-2wK.woff",
+      "assets/materialdesignicons-webfont-B7mPwVP_.ttf"
+    ]
+  },
+  "resources/js/assets/images/flag/icon-flag-en.svg": {
+    "file": "assets/icon-flag-en-Cx1mcKzE.svg",
+    "src": "resources/js/assets/images/flag/icon-flag-en.svg"
+  },
+  "resources/js/assets/images/flag/icon-flag-es.svg": {
+    "file": "assets/icon-flag-es-DL6RIaKh.svg",
+    "src": "resources/js/assets/images/flag/icon-flag-es.svg"
+  },
+  "resources/js/assets/images/logo-symbol.png": {
+    "file": "assets/logo-symbol-BSHNO7il.png",
+    "src": "resources/js/assets/images/logo-symbol.png"
+  },
+  "resources/js/assets/images/logo.png": {
+    "file": "assets/logo-C5tW1nGn.png",
+    "src": "resources/js/assets/images/logo.png"
+  },
+  "resources/js/layouts/full/FullLayout.vue": {
+    "file": "assets/FullLayout-BaRYK2R1.js",
+    "name": "FullLayout",
+    "src": "resources/js/layouts/full/FullLayout.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.ts"
+    ],
+    "css": [
+      "assets/FullLayout-ChkPYcAO.css"
+    ],
+    "assets": [
+      "assets/logo-C5tW1nGn.png",
+      "assets/logo-symbol-BSHNO7il.png",
+      "assets/icon-flag-en-Cx1mcKzE.svg",
+      "assets/icon-flag-es-DL6RIaKh.svg"
+    ]
+  },
+  "resources/js/views/jobs/Details.vue": {
+    "file": "assets/Details-OmA-krlp.js",
+    "name": "Details",
+    "src": "resources/js/views/jobs/Details.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.ts",
+      "_i18nUtils-VWib1heL.js",
+      "_jobExecution-Dcnq31yo.js",
+      "_UiParentCard.vue_vue_type_script_setup_true_lang-BfSscY-T.js"
+    ]
+  },
+  "resources/js/views/jobs/Execute.vue": {
+    "file": "assets/Execute-CN3naZ-y.js",
+    "name": "Execute",
+    "src": "resources/js/views/jobs/Execute.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.ts",
+      "_UiParentCard.vue_vue_type_script_setup_true_lang-BfSscY-T.js",
+      "_index-BCwlJIxQ.js",
+      "_project-DiB0_pof.js",
+      "_jobExecution-Dcnq31yo.js"
+    ]
+  },
+  "resources/js/views/projects/Index.vue": {
+    "file": "assets/Index-Dv2fvWLG.js",
+    "name": "Index",
+    "src": "resources/js/views/projects/Index.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.ts",
+      "_i18nUtils-VWib1heL.js",
+      "_UiParentCard.vue_vue_type_script_setup_true_lang-BfSscY-T.js",
+      "_index-BCwlJIxQ.js",
+      "_project-DiB0_pof.js"
+    ]
+  },
+  "resources/js/views/projects/Show.vue": {
+    "file": "assets/Show-Cnm1arQ8.js",
+    "name": "Show",
+    "src": "resources/js/views/projects/Show.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.ts",
+      "_i18nUtils-VWib1heL.js",
+      "_project-DiB0_pof.js",
+      "_jobExecution-Dcnq31yo.js",
+      "_UiParentCard.vue_vue_type_script_setup_true_lang-BfSscY-T.js"
+    ]
+  }
+}

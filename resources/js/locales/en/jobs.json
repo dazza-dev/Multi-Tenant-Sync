@@ -1,0 +1,34 @@
+{
+  "executeJob": "Execute Job",
+  "searchJob": "Search Job...",
+  "name": "Name",
+  "batch": "Batch",
+  "job": "Job",
+  "date": "Date",
+  "status": "Status",
+  "total": "Total",
+  "pending": "Pending",
+  "failed": "Failed",
+  "selectProject": "Select Project",
+  "selectJob": "Select Job",
+  "jobName": "Name or details of the job (Optional)",
+  "jobParams": "Parameters",
+  "statuses": {
+    "pending": "Pending",
+    "running": "Running",
+    "completed": "Completed",
+    "failed": "Failed",
+    "cancelled": "Cancelled"
+  },
+  "jobExecutedSuccessfully": "Job executed successfully",
+  "errorExecutingJob": "Error executing job",
+
+  "tableHeaderName": "Name",
+  "tableHeaderTenant": "Tenant",
+  "tableHeaderTotal": "Total",
+  "tableHeaderPending": "Pending",
+  "tableHeaderFailed": "Failed",
+  "tableHeaderDate": "Date",
+  "tableHeaderResponse": "Response",
+  "tableHeaderStatus": "Status"
+}
