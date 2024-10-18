@@ -83,6 +83,7 @@ export const useJobExecutionStore = defineStore({
       search,
       sortColumn,
       sortDirection,
+      status,
     }: {
       jobExecutionId: number;
       page: number;
@@ -90,6 +91,7 @@ export const useJobExecutionStore = defineStore({
       search: string;
       sortColumn: string;
       sortDirection: string;
+      status: number;
     }) {
       this.loading = true;
       try {
@@ -102,6 +104,7 @@ export const useJobExecutionStore = defineStore({
               search: search,
               sortColumn: sortColumn,
               sortDirection: sortDirection,
+              status: status,
             },
           }
         );
@@ -150,6 +153,36 @@ export const useJobExecutionStore = defineStore({
           params: params,
         });
         return { success: true, jobExecution: response.data.jobExecution };
+      } catch (error) {
+        console.error("Error executing job:", error);
+        throw error;
+      } finally {
+        this.loading = false;
+      }
+    },
+
+    // Export To Excel
+    async exportToExcel(jobExecutionId: number, filters: Array<any>) {
+      this.loading = true;
+      try {
+        const response = await axios.get(
+          "job-executions/export/" + jobExecutionId,
+          {
+            responseType: "blob",
+            params: filters,
+          }
+        );
+
+        // Download
+        const blob = new Blob([response.data], {
+          type: "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+        });
+        const link = document.createElement("a");
+        link.href = window.URL.createObjectURL(blob);
+        link.download = "export.csv";
+        link.click();
+
+        return response.data;
       } catch (error) {
         console.error("Error executing job:", error);
         throw error;

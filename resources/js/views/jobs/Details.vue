@@ -44,7 +44,7 @@
         </div>
 
         <v-row class="mt-5">
-          <v-col cols="12" lg="4" md="6">
+          <v-col cols="12" lg="4" md="4">
             <v-text-field
               density="compact"
               v-model="search"
@@ -52,7 +52,25 @@
               prepend-inner-icon="mdi-magnify"
               variant="outlined"
               hide-details
+              clearable
             ></v-text-field>
+          </v-col>
+          <v-col cols="12" lg="4" md="4">
+            <v-select
+              density="compact"
+              v-model="status"
+              :items="statuses"
+              :label="$t('jobs.filterByStatus')"
+              variant="outlined"
+              hide-details
+              clearable
+            ></v-select>
+          </v-col>
+          <v-col cols="12" lg="4" md="4" class="text-right">
+            <v-btn color="success" @click="exportToExcel">
+              <v-icon left>mdi-file-excel</v-icon>
+              {{ $t("common.export") }}
+            </v-btn>
           </v-col>
         </v-row>
 
@@ -77,7 +95,7 @@
               color="success"
               size="small"
               label
-              >{{ $tc("jobs.statuses.completed") }}</v-chip
+              >{{ $t("jobs.statuses.completed") }}</v-chip
             >
             <v-chip
               v-else
@@ -86,7 +104,7 @@
               color="error"
               size="small"
               label
-              >{{ $tc("jobs.statuses.failed") }}</v-chip
+              >{{ $t("jobs.statuses.failed") }}</v-chip
             >
           </template>
           <template v-slot:item.response="{ item }">
@@ -184,6 +202,12 @@ watch(
 
 //
 const search = ref("");
+const status = ref(null);
+const statuses = ref([
+  { title: t("jobs.statuses.all"), value: null },
+  { title: t("jobs.statuses.completed"), value: 1 },
+  { title: t("jobs.statuses.failed"), value: 0 },
+]);
 const sortBy = ref([]);
 const sortColumn = ref("created_at");
 const sortDirection = ref("desc");
@@ -208,6 +232,7 @@ const loadData = ({
     search: search.value,
     sortColumn: sortColumn.value,
     sortDirection: sortDirection.value,
+    status: status.value,
   });
 };
 
@@ -233,6 +258,22 @@ watch(sortBy, (newValue, oldValue) => {
     sortDirection.value = newValue[0].order;
   }
 });
+
+watch(status, (newValue, oldValue) => {
+  if (newValue !== oldValue) {
+    loadData({
+      page: 0,
+      itemsPerPage: itemsPerPage.value,
+    });
+  }
+});
+
+const exportToExcel = () => {
+  storeJobs.exportToExcel(jobExecutionId.value, {
+    search: search.value,
+    status: status.value,
+  });
+};
 
 onUnmounted(() => {
   storeJobs.reset();

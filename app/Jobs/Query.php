@@ -51,6 +51,22 @@ class Query implements ShouldQueue
         $statement = $conn->getPdo()->prepare($this->params);
         $statement->execute();
 
-        return 'The operation affected '.(int) $statement->rowCount().' records';
+        // Get the SQL type (SELECT, INSERT, UPDATE OR DELETE)
+        $sqlType = strtoupper(strtok(trim($this->params), ' '));
+
+        switch ($sqlType) {
+            case 'SELECT':
+                return json_encode($statement->fetchAll(\PDO::FETCH_ASSOC));
+
+            case 'UPDATE':
+            case 'DELETE':
+                return 'The operation affected '.(int) $statement->rowCount().' records';
+
+            case 'INSERT':
+                return 'Inserted record with ID: '.$conn->getPdo()->lastInsertId();
+
+            default:
+                return 'Query executed successfully.';
+        }
     }
 }

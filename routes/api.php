@@ -10,5 +10,6 @@ Route::get('jobs-available', [JobExecutionsController::class, 'jobsAvailable']);
 Route::get('job-executions/{project}', [JobExecutionsController::class, 'index']);
 Route::get('job-executions/show/{jobExecution}', [JobExecutionsController::class, 'show']);
 Route::get('job-executions/logs/{jobExecution}', [JobExecutionsLogsController::class, 'index']);
+Route::get('job-executions/export/{jobExecution}', [JobExecutionsLogsController::class, 'export']);
 Route::post('execute-job/{project}', [JobExecutionsController::class, 'executeJob']);
 Route::get('getBatch/{batchId}', [JobExecutionsController::class, 'getBatch']);

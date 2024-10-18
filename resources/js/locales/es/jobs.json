@@ -1,6 +1,7 @@
 {
   "executeJob": "Ejecutar Trabajo",
   "searchJob": "Buscar Trabajo...",
+  "filterByStatus": "Filtrar por Estado",
   "name": "Nombre",
   "batch": "Lote",
   "job": "Trabajo",
@@ -14,6 +15,7 @@
   "jobName": "Nombre o detalles del trabajo (Opcional)",
   "jobParams": "Parámetros",
   "statuses": {
+    "all": "Todos",
     "pending": "Pendiente",
     "running": "En progreso",
     "completed": "Completado",

@@ -51,4 +51,13 @@ class ProjectsController extends Controller
             'message' => 'Project Updated Successfully',
         ], 200);
     }
+
+    public function destroy(Project $project): JsonResponse
+    {
+        $project->delete();
+
+        return response()->json([
+            'message' => 'Project Deleted Successfully',
+        ], 200);
+    }
 }

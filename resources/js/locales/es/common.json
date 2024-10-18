@@ -9,6 +9,7 @@
   "cancel": "Cancelar",
   "yes": "Si",
   "no": "No",
+  "export": "Exportar",
   "close": "Cerrar",
   "actions": "Acciones",
   "fieldsValidationError": "Error de validación: Todos los campos son obligatorios."

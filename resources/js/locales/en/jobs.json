@@ -1,6 +1,7 @@
 {
   "executeJob": "Execute Job",
   "searchJob": "Search Job...",
+  "filterByStatus": "Filter by Status",
   "name": "Name",
   "batch": "Batch",
   "job": "Job",
@@ -14,6 +15,7 @@
   "jobName": "Name or details of the job (Optional)",
   "jobParams": "Parameters",
   "statuses": {
+    "all": "All",
     "pending": "Pending",
     "running": "Running",
     "completed": "Completed",
